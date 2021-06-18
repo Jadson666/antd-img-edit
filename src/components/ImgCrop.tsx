@@ -7,7 +7,7 @@ import React, {
 } from 'react';
 // @ts-ignore
 import Cropper from 'react-easy-crop';
-import Modal from 'antd/es/modal';
+import { Modal } from 'antd';
 import {
   BorderHorizontalOutlined,
   BorderVerticleOutlined,
