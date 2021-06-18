@@ -1,0 +1,84 @@
+{
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "peerDependencies": {
+    "antd": ">=4.0.0",
+    "prop-types": ">=15.6.2",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "antd-img-edit",
+  "homepage": "https://github.com/Jadson666/antd-img-edit",
+  "author": "Jason Lin",
+  "module": "dist/antd-img-edit.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/antd-img-edit.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/antd-img-edit.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@size-limit/preset-small-lib": "^4.12.0",
+    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-info": "^5.3.21",
+    "@storybook/addon-links": "^6.2.9",
+    "@storybook/addons": "^6.2.9",
+    "@storybook/react": "^6.2.9",
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.7",
+    "antd": "^4.16.3",
+    "babel-loader": "^8.2.2",
+    "husky": "^6.0.0",
+    "less": "^4.1.1",
+    "postcss": "^8.3.5",
+    "postcss-modules": "^4.1.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-is": "^17.0.2",
+    "rollup-plugin-postcss": "^4.0.0",
+    "size-limit": "^4.12.0",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.3"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.6.2",
+    "react-easy-crop": "^3.5.1"
+  }
+}
