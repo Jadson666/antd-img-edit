@@ -7,7 +7,6 @@ import React, {
 } from 'react';
 // @ts-ignore
 import Cropper from 'react-easy-crop';
-import LocaleReceiver from 'antd/es/locale-provider/LocaleReceiver';
 import Modal from 'antd/es/modal';
 import {
   BorderHorizontalOutlined,
@@ -455,16 +454,7 @@ const ImgCrop = forwardRef((props: ImgCropProps, ref) => {
       )}
     </>
   );
-
-  if (modalTitle) return renderComponent(modalTitle);
-
-  return (
-    <LocaleReceiver>
-      {(locale, localeCode) =>
-        renderComponent(localeCode === 'zh-cn' ? '编辑图片' : 'Edit image')
-      }
-    </LocaleReceiver>
-  );
+  return renderComponent(modalTitle || 'Edit Image');
 });
 
 export default ImgCrop;
