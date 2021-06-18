@@ -1,4 +1,5 @@
 develope base on https://www.npmjs.com/package/antd-img-crop
+I add the functionality of mirror the image
 
 # antd-img-edit
 

@@ -125,27 +125,27 @@ const EasyCrop = forwardRef((props: EasyCropProps, ref) => {
 });
 
 interface ImgCropProps {
-  aspect: any;
-  shape: any;
-  grid: any;
-  quality: any;
+  aspect?: any;
+  shape?: any;
+  grid?: any;
+  quality?: any;
 
-  flip: any;
-  zoom: any;
-  rotate: any;
-  minZoom: any;
-  maxZoom: any;
-  fillColor: any;
+  flip?: any;
+  zoom?: any;
+  rotate?: any;
+  minZoom?: any;
+  maxZoom?: any;
+  fillColor?: any;
 
-  modalTitle: any;
-  modalWidth: any;
-  modalOk: any;
-  modalCancel: any;
+  modalTitle?: any;
+  modalWidth?: any;
+  modalOk?: any;
+  modalCancel?: any;
 
-  beforeCrop: any;
-  children: any;
+  beforeCrop?: any;
+  children?: any;
 
-  cropperProps: any;
+  cropperProps?: any;
 }
 
 const ImgCrop = forwardRef((props: ImgCropProps, ref) => {
